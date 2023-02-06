@@ -1,6 +1,6 @@
-const express = require('express');
-const fs = require('fs');
-const app = express();
+const express = require('express');// je cree une constante express pout importer l'integralite du module 'express' grace a require
+const fs = require('fs');// je cree une constante fs pout importer l'integralite du module 'fs'
+const app = express();// la constante app contient l'application express crée par la methode 'express'
 //je fait une requete d'apres la route de ma data_menu Json 
 app.get('/data_menu',(request, response)=>{
     fs.readFile('data_menu.json',(err, data)=>{  // la librairie fs permet de lire le fichier data_menu.json grace a la methode readFile avec comme param err et data
